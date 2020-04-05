@@ -4,7 +4,7 @@
 - A base class declares a virtual function.
 - A derived class overrides that virtual function by defining its own implementation with an identical function signature (i.e. the same function name and argument types).
 
-```
+```cpp
 class Animal {
 public:
   virtual std::string Talk() const = 0;
@@ -21,7 +21,7 @@ public:
 
 - A derived class hides a base class function, as opposed to overriding it, if the base class function is not specified to be virtual.
 
-```
+```cpp
 class Cat { // Here, Cat does not derive from a base class
 public:
   std::string Talk() const { return std::string("Meow"); }
@@ -44,7 +44,7 @@ In this situation, Lion::Talk() is hiding Cat::Talk(). If Cat::Talk() were virtu
 
 It is possible, but not required, to specify a function declaration as override.
 
-```
+```cpp
 class Shape {
 public:
   virtual double Area() const = 0;

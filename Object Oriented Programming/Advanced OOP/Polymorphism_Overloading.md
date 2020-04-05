@@ -8,7 +8,7 @@ In the context of object-oriented programming, polymorphism describes a paradigm
 ## Overloading
 In C++, you can write two (or more) versions of a function with the same name. This is called "overloading". Overloading requires that we leave the function name the same, but we modify the function signature. For example, we might define the same function name with multiple different configurations of input arguments.
 
-```
+```cpp
 #include <iostream>
 
 class Human {};

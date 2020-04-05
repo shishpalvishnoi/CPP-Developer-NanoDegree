@@ -8,7 +8,7 @@ Constructors are member functions of a class or struct that initialize an object
 
 **Sample Program:**
 
-```
+```cpp
 #include <cassert>
 
 class Date {

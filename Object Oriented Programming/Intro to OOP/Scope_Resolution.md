@@ -6,7 +6,7 @@ In some cases, scopes can overlap, in which case the compiler may need assistanc
 # Scope Resolution Operator
 :: is the scope resolution operator. We can use this operator to specify which namespace or class to search in order to resolve an identifier.
 
-```
+```cpp
 Person::move(); \\ Call the move the function that is a member of the Person class.
 std::map m; \\ Initialize the map container from the C++ Standard Library.  
 ```
@@ -16,7 +16,7 @@ std::map m; \\ Initialize the map container from the C++ Standard Library.
 
 - This becomes particularly useful if we want to separate class declaration from class definition.
 
-```
+```cpp
 class Date {
  public:
   int Day() const { return day; }
@@ -45,7 +45,7 @@ void Date::Day(int day) {
 
 Namespaces allow programmers to group logically related variables and functions together. Namespaces also help to avoid conflicts between to variables that have the same name in different parts of a program.
 
-```
+```cpp
 namespace English {
 void Hello() { std::cout << "Hello, World!\n"; }
 }  // namespace English

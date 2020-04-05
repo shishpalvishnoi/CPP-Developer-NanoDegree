@@ -3,7 +3,7 @@ Class members can be declared static, which means that the member belongs to the
 
 static members are declared within their class (often in a header file) but in most cases they must be defined within the global scope. That's because memory is allocated for static variables immediately when the program begins, at the same time any global variables are initialized.
 
-```
+```cpp
 #include <cassert>
 
 class Foo {
@@ -22,7 +22,7 @@ int main() {
 
 - An exception to the global definition of static members is if such members can be marked as constexpr. In that case, the static member variable can be both declared and defined within the class definition:
 
-```
+```cpp
 struct Kilometer {
   static constexpr int meters{1000};
 };

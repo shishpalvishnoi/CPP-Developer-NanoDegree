@@ -3,7 +3,7 @@
 **Structures** allow us to create our own types ("user-defined" types) to aggregate data relevant to our needs.
 
 **Sample Program:**
-```
+```cpp
 #include <cassert>
 #include <iostream>
 
@@ -36,7 +36,7 @@ int main() {
 > To access private members, we typically define public "accessor" and "mutator" member functions (sometimes called "getter" and "setter" functions).
 
 **Sample Code:**
-```
+```cpp
 #include <cassert>
 #include <iostream>
 

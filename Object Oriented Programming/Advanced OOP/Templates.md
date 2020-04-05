@@ -4,7 +4,7 @@ Templates enable generic programming by generalizing a function to apply to any 
 
 At compile time, the compiler then expands the code using the types that are passed as parameters.
 
-```
+```cpp
 template <typename Type> Type Sum(Type a, Type b) { return a + b; }
 
 int main() 
@@ -15,7 +15,7 @@ int main()
 
 Sum() is defined with a template, when the program calls Sum() with doubles as parameters, the function expands to become:
 
-```
+```cpp
 double Sum(double a, double b) {
     return a+b;
 }

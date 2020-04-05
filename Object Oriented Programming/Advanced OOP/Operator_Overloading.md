@@ -1,6 +1,6 @@
 In order to overload an operator, use the operator keyword in the function signature:
 
-```
+```cpp
 Complex operator+(const Complex& addend) {
   //...logic to add complex numbers
 }
@@ -8,7 +8,7 @@ Complex operator+(const Complex& addend) {
 
 Imagine vector addition. You might want to perform vector addition on a pair of points to add their x and y components. The compiler won't recognize this type of operation on its own, because this data is user defined. However, you can overload the + operator so it performs the action that you want to implement.
 
-```
+```cpp
 #include <assert.h>
 
 class Point {
