@@ -28,3 +28,11 @@ Search( grid, initial_point, goal_point ) :
 		- If the cell is empty, compute the cost (g value) and the heuristic, and add to the list of open nodes.
 		- Mark the cell as closed.
 5. If you exit the while loop because the list of open nodes is empty, you have run out of new nodes to explore and haven't found a path.
+
+## The code for the **A* search algorithm** has been broken down into the following functions:
+
+- CellSort() - sorts the open list according to the sum of h + g
+- ExpandNeighbors() - loops through the current node's neighbors and calls appropriate functions to add neighbors to the open list
+- CheckValidCell() - ensures that the potential neighbor coordinates are on the grid and that the cell is open
+- Heuristic() - computes the distance to the goal
+- AddToOpen() - adds the node to the open list and marks the grid cell as closed
