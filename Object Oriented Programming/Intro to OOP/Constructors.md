@@ -1,3 +1,5 @@
+# Constructor: 
+
 Constructors are member functions of a class or struct that initialize an object. 
 
 > constructor: an operation that initializes (“constructs”) an object. Typically a constructor establishes an invariant and often acquires resources needed for an object to be used (which are then typically released by a destructor).
@@ -6,6 +8,7 @@ Constructors are member functions of a class or struct that initialize an object
 
 **Sample Program:**
 
+```
 #include <cassert>
 
 class Date {
@@ -32,7 +35,6 @@ class Date {
   int year{0};
 };
 
-// Test in main
 int main() {
   Date date(8,29,1981);
   assert(date.Day() == 8);
@@ -40,6 +42,8 @@ int main() {
   assert(date.Year() == 1981);
 }
 
-We can initialize an object of this class, even though this class does not explicitly define a constructor.
+```
 
-This is possible because of the default constructor. The compiler will define a default constructor, which accepts no arguments, for any class or structure that does not contain an explicitly-defined constructor.
+- We can initialize an object of this class, even though this class does not explicitly define a constructor.
+
+- This is possible because of the default constructor. The compiler will define a default constructor, which accepts no arguments, for any class or structure that does not contain an explicitly-defined constructor.
