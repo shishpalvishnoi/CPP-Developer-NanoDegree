@@ -2,7 +2,7 @@
 
 C++ allows us to define a custom type which has values limited to a specific range we list or "enumerate". This custom type is called an "enum".
 
-```
+```cpp
 #include <iostream>
 using std::cout;
 
@@ -23,7 +23,7 @@ int main() {
 }
 ```
 
-```
+```cpp
 #include <iostream>
 using std::cout;
 
@@ -56,7 +56,7 @@ To accommodate more board states and facilitate print formatting, we have provid
 
 "⛰️ " if the input equals a kObstacle
 
-```
+```cpp
 #include <fstream>
 #include <iostream>
 #include <sstream>

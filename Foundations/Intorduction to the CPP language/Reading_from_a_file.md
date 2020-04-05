@@ -6,14 +6,14 @@ In C++, we can use the `std::ifstream` object to handle input file streams. To d
 
 Once the `<fstream>` header is included, a new input stream object can be declared and initialized using a file path `path`:
 
-```
+```cpp
 std::ifstream my_file;
 my_file.open(path);
 ```
 
 Alternatively, the declaration and initialization can be done in a single line as follows:
 
-```
+```cpp
 std::ifstream my_file(path);
 ```
 
@@ -21,7 +21,7 @@ C++ `ifstream` objects can also be used as a boolean to check if the stream has 
 
 The following cell creates an input stream from the file `"files/1.board"`:
 
-```
+```cpp
 #include <fstream>
 #include <iostream>
 #include <string>
@@ -40,7 +40,7 @@ int main()
 
 If the input file stream object has been successfully created, the lines of the input stream can be read using the `getline` method. In the cell below, a while loop has been added to the previous example to get each line from the stream and print it to the console.
 
-```
+```cpp
 #include <fstream>
 #include <iostream>
 #include <string>

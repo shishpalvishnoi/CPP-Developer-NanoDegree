@@ -1,6 +1,6 @@
 Now that we are able to read a board line by line from a file, we will want to parse these lines and store them in a vector<int>. In this exercise, we will focus on a helper function to do this string parsing.
 
-```
+```cpp
 #include <fstream>
 #include <iostream>
 #include <sstream>
