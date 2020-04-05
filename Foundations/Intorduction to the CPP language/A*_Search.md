@@ -1,8 +1,9 @@
-Summary and A* Pseudocode
-This algorithm described by Sebastian is very similar to other search algorithms you may have seen before, such as breadth-first search, except for the additional step of computing a heuristic and using that heuristic (in addition to the cost) to find the next node.
+# Summary and A* Pseudocode:
+This algorithm described by Sebastian is very similar to other search algorithms you may have seen before, such as **breadth-first search**, except for the additional step of computing a heuristic and using that heuristic (in addition to the cost) to find the next node.
 
-A* Pseudocode
+**A* Pseudocode:**
 
+```
 Search( grid, initial_point, goal_point ) :
 
 1. Initialize an empty list of open nodes.
@@ -28,5 +29,6 @@ Search( grid, initial_point, goal_point ) :
 		- If the cell is empty, compute the cost (g value) and the heuristic, and add to the list of open nodes.
 		- Mark the cell as closed.
 5. If you exit the while loop because the list of open nodes is empty, you have run out of new nodes to explore and haven't found a path.
+```
 
 > **Note:** The A* algorithm finds a path from the start node to the end node by checking for open neighbors of the current node, computing a heuristic for each of the neighbors, and adding those neighbors to the list of open nodes to explore next. The next node to explore is the one with the lowest total cost + heuristic (g + h). This process is repeated until the end is found, as long as there are still open nodes to explore.
