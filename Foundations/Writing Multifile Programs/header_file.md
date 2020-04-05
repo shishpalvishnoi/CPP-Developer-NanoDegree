@@ -1,7 +1,7 @@
 eader files, or .h files, allow related function, method, and class declarations to be collected in one place. The corresponding definitions can then be placed in .cpp files. The compiler considers a header declaration a "promise" that the definition will be found later in the code, so if the compiler reaches a function that hasn't been defined yet, it can continue on compiling until the definition is found. This allows functions to be defined (and declared) in arbitrary order.
 
 ## Single File Code:
-```
+```cpp
 #include <iostream>
 #include <vector>
 using std::vector;
@@ -36,7 +36,7 @@ int main() {
 
 **vect_add_one.h:**
 
-```
+```cpp
 #ifndef VECT_ADD_ONE_H
 #define VECT_ADD_ONE_H
 
@@ -50,7 +50,7 @@ void AddOneToEach(vector<int> &v);
 ```
 
 **vect_add_one.cpp:**
-```
+```cpp
 #include "vect_add_one.h"
 
 void AddOneToEach(vector<int> &v) 
@@ -76,7 +76,7 @@ int IncrementAndComputeVectorSum(vector<int> v);
 
 **increment_add_sum.cpp:**
 
-```
+```cpp
 #include "vect_add_one.h"
 
 int IncrementAndComputeVectorSum(vector<int> v) {
@@ -91,7 +91,7 @@ int IncrementAndComputeVectorSum(vector<int> v) {
 ```
 
 **main.cpp:**
-```
+```cpp
 #include <iostream>
 #include <vector>
 #include "increment_and_sum.h"

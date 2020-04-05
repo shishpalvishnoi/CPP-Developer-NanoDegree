@@ -8,7 +8,7 @@ a C++ program can be written without using pointers extensively (or at all). How
 
 Each variable in a program stores its contents in the computer's memory, and each chunk of the memory has an address number. For a given variable, the memory address can be accessed using an ampersand in front of the variable. To see an example of this, execute the following code which displays the [hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) memory addresses of the variables `i` and `j`:
 
-```
+```cpp
 #include <iostream>
 using std::cout;
 
@@ -30,7 +30,7 @@ _This is extremely important to remember._ For the `&` symbol, if it appears on 
 
 Once a memory address is accessed, you can store it using a pointer. A pointer can be declared by using the `*` operator in the declaration. See the following code for an example:
 
-```
+```cpp
 #include <iostream>
 using std::cout;
 
@@ -50,7 +50,7 @@ int main()
 
 Once you have a pointer, we may want to retrieve the object it is pointing to. In this case, the `*` symbol can be used again. This time, however, it will appear on the right hand side of an equation or in front of an already-defined variable, so the meaning is different. In this case, it is called the "dereferencing operator", and it returns the object being pointed to. You can see how this works with the code below:
 
-```
+```cpp
 #include <iostream>
 using std::cout;
 
@@ -69,7 +69,7 @@ int main()
 
 Although the type of object being pointed to must be included in a pointer declaration, pointers hold the same kind of value for every type of object: just a memory address to where the object is stored.
 
-```
+```cpp
 #include <iostream>
 #include <vector>
 using std::cout;
@@ -100,7 +100,7 @@ Pointers can be used in another form of pass-by-reference when working with func
 
 In the following code, a pointer to an int is created, and that pointer is passed to a function. The object pointed to is then modified in the function.
 
-```
+```cpp
 #include <iostream>
 using std::cout;
 
@@ -128,7 +128,7 @@ You can also return a pointer from a function. As mentioned just above, if you d
 
 In the example below, a reference is passed into a function and a pointer is returned. This is safe since the pointer being returned points to a reference - a variable that exists outside of the function and will not go out of scope in the function.
 
-```
+```cpp
 #include <iostream>
 using std::cout;
 

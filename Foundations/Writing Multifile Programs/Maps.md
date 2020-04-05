@@ -6,7 +6,7 @@
 
 In the following notebook, we will learn how to use an unordered_map, which is the C++ standard library implementation of a map. Although C++ has several different implementations of map data structures which are similar, unordered_map is the structure that we will use in our project.
 
-```
+```cpp
 #include <iostream>
 #include <vector>
 #include <unordered_map>

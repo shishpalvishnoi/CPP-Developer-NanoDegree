@@ -6,7 +6,7 @@ In C++ the attributes and methods that make up an object are specified in a code
 
 **Sample Program:**
 
-```
+```cpp
 #include <iostream>
 #include <string>
 using std::string;
@@ -60,7 +60,7 @@ int main()
 
 In the previous concept, you saw how to create a `Car` classs and use a constructor. At the end of that concept, your code looked like this:
 
-```
+```cpp
 #include <iostream>
 #include <string>
 using std::string;
@@ -143,7 +143,7 @@ Check out the cells below to see this code in practice. In this code, we have se
 ### car.h and car.cpp
 
 **car.h:**
-```
+```cpp
 #ifndef CAR_H
 #define CAR_H
 
@@ -172,7 +172,7 @@ class Car {
 
 **Car.cpp**
 
-```
+```cpp
 #include <iostream>
 #include "car.h"
 
@@ -190,7 +190,7 @@ void Car::IncrementDistance()
 
 **Car_main.cpp:**
 
-```
+```cpp
 #include <iostream>
 #include <string>
 #include "car.h"
@@ -239,7 +239,7 @@ The `new` operator allocates memory on the "heap" for a new Car. In general, thi
 
 **car_main2.cpp**
 
-```
+```cpp
 #include <iostream>
 #include <string>
 #include <vector>
