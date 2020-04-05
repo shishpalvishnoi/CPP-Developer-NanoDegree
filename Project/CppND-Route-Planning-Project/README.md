@@ -2,9 +2,9 @@
 
 This repo contains the code for the Route Planning project.
 
-<img src="code_structure.png" width="600" height="350" />
+<img src="code_structure.png" width="900" height="500" />
 
-<img src="map.png" width="600" height="450" />
+<img src="map.png" width="900" height="600" />
 
 ## Cloning
 
