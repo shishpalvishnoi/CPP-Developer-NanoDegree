@@ -74,6 +74,7 @@ make
 
 - In the second line, make finds the Makefile and uses the instructions in the Makefile to build the project.
 
+**CMake Step 5:**
 - If everything has worked correctly, we should now be able to run your executable from the build folder:
 
 ```
