@@ -4,9 +4,9 @@ This repo contains the code for the Route Planning project.
 
 <img src="code_structure.png" width="900" height="500" />
 
-**Sample Final Output:**
+**Sample Final Output:(A Path Rendered between two points on a Map)**
 
-<img src="map.png" width="900" height="600" />
+<img src="map.png" width="900" height="500" />
 
 ## Cloning
 
